@@ -7,8 +7,8 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize(words)
-    words = @text.split
+  def piglatinize(text)
+    words = text.split
     array=[]
     words.each do |word|
       if word[0].downcase.scan(/[bcdfghjklmnpqrstvwxyz]/) != []
